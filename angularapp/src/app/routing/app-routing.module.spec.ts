@@ -61,32 +61,32 @@ describe("App Routing",() => {
     //     })
     // }))
 
-    fit('App Routing should route to home page by default', async () => {
+    fit('Week5_Day1_should route to home page by default', async () => {
       await router.initialNavigation();
       expect(location.path()).toBe('/');
     });
 
-    fit('App Routing should route to admin page', async () => {
+    fit('Week5_Day1_should route to admin page', async () => {
       await router.navigate(['/admin']);
       expect(location.path()).toBe('/admin');
     });
 
-    fit('App Routing should route to organizer page', async () => {
+    fit('Week5_Day2_should route to organizer page', async () => {
       await router.navigate(['/organizer']);
       expect(location.path()).toBe('/organizer');
     });
 
-    // fit('Week5_Day1_should route to login page', async () => {
-    //   await router.navigate(['/login']);
-    //   expect(location.path()).toBe('/login');
-    // });
+    fit('Week5_Day1_should route to login page', async () => {
+      await router.navigate(['/login']);
+      expect(location.path()).toBe('/login');
+    });
 
-    // fit('Week5_Day1_should route to register page', async () => {
-    //   await router.navigate(['/register']);
-    //   expect(location.path()).toBe('/register');
-    // });
+    fit('Week5_Day1_should route to register page', async () => {
+      await router.navigate(['/register']);
+      expect(location.path()).toBe('/register');
+    });
 
-    fit('App Routing should route to default path for invalid paths', async () => {
+    fit('Week5_Day2_should route to default path for invalid paths', async () => {
         await router.navigate(['/invalid']);
         fixture.detectChanges();
         expect(location.path()).toBe('/error');

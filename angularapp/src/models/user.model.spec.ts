@@ -1,7 +1,7 @@
 import { User } from './user.model';
 
 describe('User Models', () => {
-  fit('User_Models_should_create_User_instance', () => {
+  fit('Week4_Day3_should_create_User_instance', () => {
     const user: User = {
       username: 'admin123',
       password: 'securePassword',

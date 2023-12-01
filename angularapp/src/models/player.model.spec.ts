@@ -1,7 +1,7 @@
 import { Player } from './player.model';
 
 describe('Player Models', () => {
-  fit('Player_Models_should_create_Player_instance', () => {
+  fit('Week4_Day3_should_create_Player_instance', () => {
     const player: Player = {
       name: 'John',
       age: 25,

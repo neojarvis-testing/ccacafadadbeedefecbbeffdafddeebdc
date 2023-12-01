@@ -1,7 +1,7 @@
 import { Team } from './team.model';
 
 describe('Team Models', () => {
-  fit('Team_Models_create_Team_instance', () => {
+  fit('Week4_Day3_create_Team_instance', () => {
     const team: Team = {
       name: 'Team A',
       maximumBudget: 1000000

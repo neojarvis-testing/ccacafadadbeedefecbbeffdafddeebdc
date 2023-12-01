@@ -139,7 +139,7 @@ describe('RegistrationComponent', () => {
 //     expect(errorMessage.nativeElement.textContent).toContain('Passwords do not match');
 //   }));
 //*************************** */
-  fit('RegistrationComponent_should navigate to organizer on organizer register', () => {
+  fit('Week5_Day4_should navigate to organizer on organizer register', () => {
     spyOn(authService, 'register').and.returnValue(of({ role: 'ORGANIZER' }));
     const router = TestBed.inject(Router); // Inject Router
     spyOn(router, 'navigate'); // Spy on router's navigate method
@@ -153,7 +153,7 @@ describe('RegistrationComponent', () => {
     expect(router.navigate).toHaveBeenCalledWith(['/organizer']); // Use router's navigate method
   });
 
-  fit('RegistrationComponent_should navigate to admin on admin register', () => {
+  fit('Week5_Day4_should navigate to admin on admin register', () => {
     spyOn(authService, 'register').and.returnValue(of({ role: 'ADMIN' }));
     const router = TestBed.inject(Router); // Inject Router
     spyOn(router, 'navigate'); // Spy on router's navigate method

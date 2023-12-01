@@ -24,11 +24,11 @@ describe('TeamComponent', () => {
     fixture.detectChanges();
   });
 
-  fit('TeamComponent_create_Team_Component', () => {
+  fit('Week4_Day4_create_Team_Component', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('TeamComponent_should have edit buttons for each team', () => {
+  fit('Week5_Day2_should have edit buttons for each team', () => {
     const team = { id: 1, name: 'Test Team', maximumBudget: 1000000 };
 
     // Set the teams and trigger change detection
@@ -40,7 +40,7 @@ describe('TeamComponent', () => {
     expect(editButton).toBeTruthy();    // Check if the edit button exists
   });
 
-  fit('TeamComponent_should have delete buttons for each team', () => {
+  fit('Week5_Day2_should have delete buttons for each team', () => {
     const team = { id: 1, name: 'Test Team', maximumBudget: 1000000 };
 
     // Set the teams and trigger change detection
@@ -52,7 +52,7 @@ describe('TeamComponent', () => {
     expect(deleteButton).toBeTruthy();  // Check if the delete button exists
   });
 
-  fit('TeamComponent_check the Maximumbudget amount to create teams', () => {
+  fit('Week4_Day5_check the Maximumbudget amount to create teams', () => {
     const fixture = TestBed.createComponent(TeamComponent);
     const app = fixture.componentInstance;
     app.newTeam.maximumBudget = 2000;
@@ -64,7 +64,7 @@ describe('TeamComponent', () => {
     });
   });
 
-    fit('TeamComponent_check MaxBudget amount in status div to create teams', () => {
+    fit('Week4_Day5_check MaxBudget amount in status div to create teams', () => {
 
         const fixture = TestBed.createComponent(TeamComponent);
               const app = fixture.componentInstance;
@@ -84,7 +84,7 @@ describe('TeamComponent', () => {
               })
              });
 
-fit('TeamComponent_should display team information by ngfor', () => {
+fit('Week4_Day6_should display team information by ngfor', () => {
   component.teams = [
     { name: 'Team A', maximumBudget: 1000 },
     // Add more test teams as needed

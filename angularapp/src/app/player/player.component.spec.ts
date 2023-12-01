@@ -25,11 +25,11 @@ describe('PlayerComponent', () => {
     fixture.detectChanges();
   });
 
-  fit('PlayerComponent_create_Player_component', () => {
+  fit('Week4_Day4_create_Player_component', () => {
     expect(component).toBeTruthy();
   });
 
-  fit('PlayerComponent_should have edit buttons for each player', () => {
+  fit('Week5_Day2_should have edit buttons for each player', () => {
     const player = { id: 1, name: 'Test Player', age: 25, category: 'Category A', biddingPrice: 100 };
 
     // Set the players and trigger change detection
@@ -41,7 +41,7 @@ describe('PlayerComponent', () => {
     expect(editButton).toBeTruthy();    // Check if the edit button exists
   });
 
-  fit('PlayerComponent_should have delete buttons for each player', () => {
+  fit('Week5_Day2_should have delete buttons for each player', () => {
     const player = { id: 1, name: 'Test Player', age: 25, category: 'Category A', biddingPrice: 100 };
 
     // Set the players and trigger change detection
@@ -53,7 +53,7 @@ describe('PlayerComponent', () => {
     expect(deleteButton).toBeTruthy();  // Check if the delete button exists
   });
 
-  fit('PlayerComponent_check the bidding amount', () => {
+  fit('Week4_Day5_check the bidding amount', () => {
     const fixture = TestBed.createComponent(PlayerComponent);
     const app = fixture.componentInstance;
     app.newPlayer.biddingPrice = 200;
@@ -65,7 +65,7 @@ describe('PlayerComponent', () => {
     });
   });
 
-  fit('PlayerComponent_check bidding amount in status div', () => {
+  fit('Week4_Day5_check bidding amount in status div', () => {
     const fixture = TestBed.createComponent(PlayerComponent);
     const app = fixture.componentInstance;
     app.newPlayer.biddingPrice = 10000
@@ -83,7 +83,7 @@ describe('PlayerComponent', () => {
   })
 });
 
-  fit('PlayerComponent_should display Player information by ngfor', () => {
+  fit('Week4_Day6_should display Player information by ngfor', () => {
     component.players = [
     { id: 1, name: 'Test Player', age: 25, category: 'Category A', biddingPrice: 10100 },
     { id: 2, name: 'Test Player1', age: 35, category: 'Category B', biddingPrice: 500 }

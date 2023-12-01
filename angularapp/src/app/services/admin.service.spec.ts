@@ -22,30 +22,6 @@
 //   // })
 // });
 
-// import { TestBed } from '@angular/core/testing';
-
-// import { AdminService } from './admin.service';
-// import { HttpClientTestingModule } from '@angular/common/http/testing';
-
-// describe('AdminService', () => {
-//   let service: AdminService;
-
-//   beforeEach(() => {
-//     TestBed.configureTestingModule({
-//       imports: [HttpClientTestingModule]
-//     });
-//     service = TestBed.inject(AdminService);
-//   });
-
-//   fit('Week5_Day3_should create AdminServices', () => {
-//     expect(service).toBeTruthy();
-//   });
-
-//   // fit("getteams Method exists", () => {
-//   //   expect(service.getTeams).toBeTruthy();
-//   // })
-// });
-
 
 // // import { TestBed } from '@angular/core/testing';
 
@@ -96,11 +72,11 @@ describe('AdminService Integration Tests', () => {
   //   httpMock.verify(); // Verify that there are no open requests after each test
   // });
 
-  fit('Admin Service should create AdminServices', () => {
+  fit('should be created', () => {
     expect(service).toBeTruthy();
   });
 
-  fit('Admin Service should retrieve teams from the backend', (done: DoneFn) => {
+  fit('should retrieve teams from the backend', (done: DoneFn) => {
     service.getTeams().subscribe(
       (teams: Team[]) => {
         console.log(teams)
@@ -113,7 +89,7 @@ describe('AdminService Integration Tests', () => {
     );
   });
 
-  fit('Admin Service should create a new team via the backend', (done: DoneFn) => {
+  fit('should create a new team via the backend', (done: DoneFn) => {
     const newTeam: Team = { id: 3, name: 'New Team', maximumBudget: 50000 };
 
     service.createTeam(newTeam).subscribe(
@@ -127,7 +103,7 @@ describe('AdminService Integration Tests', () => {
     );
   });
 
-  fit('Admin Service should retrieve players from the backend', (done: DoneFn) => {
+  fit('should retrieve players from the backend', (done: DoneFn) => {
     service.getPlayers().subscribe(
       (players: Player[]) => {
         console.log(players)
